@@ -17,11 +17,11 @@ body {
   
   header .resume-link {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
   }
   
   header h1 {
