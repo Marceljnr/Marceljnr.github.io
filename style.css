@@ -1,57 +1,84 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  header {
-    position: relative;
-    background-color: #4285f4;
-    color: #fff;
-    text-align: center;
-    padding: 0cm;
-  }
-  
-  
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #4285f4;
-  }
-  
-  .project {
-    margin-bottom: 20px;
-  }
-  
-  a {
-    color: #4285f4;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
- 
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #333;
+}
 
-  
-  header img {
-    border-radius: 1%;
-    max-width: 150px;
-    margin-bottom: 10px;
-  }
-  
+header {
+  background: linear-gradient(45deg, #ff6b6b, #f06595, #d9a7c7);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+  border: 5px solid #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 10px 0 0 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #ff6b6b;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#contact p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#contact a {
+  color: #0073b1; /* LinkedIn color */
+}
+
+#contact a:hover {
+  color: #005582;
+}
