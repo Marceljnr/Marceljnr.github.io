@@ -8,6 +8,12 @@
 </head>
 <body>
   <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <img src="pic.jpg" alt="Marcel Okafor">
     <h1>Marcel Okafor</h1>
     <p>Web Developer</p>
@@ -15,12 +21,11 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Welcome! I'm a web developer majoring in Computer Science and Monetary and Financial Economics 
-        at the University of Regina. 
-        Passionate about creating user-friendly websites, I also have a keen interest in FinTech. 
-        Explore my portfolio to see projects showcasing my commitment to seamless online experiences. 
-        Feel free to reach out for any questions or collaboration opportunities – I'm excited to connect and share 
-        my enthusiasm for web development and technology!</p>
+    <p>"Hi there! I'm a web developer studying Computer Science and Monetary and
+       Financial Economics at the University of Regina. I love creating user-friendly websites
+        and have a strong interest in FinTech. Check out my portfolio to see my projects that highlight my dedication to 
+        seamless online experiences. If you have any questions or want to collaborate, feel free to reach out. I'm excited to connect 
+        and share my passion for web development and technology!"</p>
     <h3><a href="Marcel Co-op RESUME.5.pdf">View Resume</a></h3>
   </section>
 
@@ -31,10 +36,13 @@
     <p>GitHub: <a href="http://github.com/Marceljnr">github.com/Marceljnr</a></p>
   </section>
 
+ 
+
+
   <script type="text/javascript">
-   document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const headerImage = document.querySelector('header img');
-    const aboutSection = document.querySelector('#about');
+    const navLinks = document.querySelectorAll('nav a');
     
     headerImage.addEventListener('mouseover', function() {
         this.style.transform = 'scale(1.1)';
@@ -46,9 +54,16 @@
         this.style.boxShadow = 'none';
     });
 
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.scrollY;
-        aboutSection.style.backgroundColor = scrollPosition > 200 ? '#f5f5f5' : '#fff';
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        });
     });
 });
 
