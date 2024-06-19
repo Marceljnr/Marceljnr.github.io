@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Okafor Marcel - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
   <header>
@@ -14,28 +15,38 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <img src="pic.jpg" alt="Marcel Okafor">
-    <h1>Marcel Okafor</h1>
-    <p>Web Developer</p>
+    <div class="header-content">
+      <img src="pic.jpg" alt="Marcel Okafor">
+      <div class="header-text">
+        <h1>Marcel Okafor</h1>
+        <p>Web Developer</p>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi there! I'm a web developer studying Computer Science and Monetary and
-       Financial Economics at the University of Regina. I love creating user-friendly websites
-        and have a strong interest in FinTech. Check out my portfolio to see my projects that highlight my dedication to 
-        seamless online experiences. If you have any questions or want to collaborate, feel free to reach out. I'm excited to connect 
-        and share my passion for web development and technology!</p>
-      <h3><a href="http://www.webdev.cs.uregina.ca/~cmo153/Library%20Management%20Project/">Projects</a></h3>  
-    <h3><a href="Marcel Co-op RESUME.2024.2.pdf">View Resume</a></h3>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi there! I'm a web developer studying Computer Science and Monetary and Financial Economics at the University of Regina. I love creating user-friendly websites and have a strong interest in FinTech. Check out my portfolio to see my projects that highlight my dedication to seamless online experiences. If you have any questions or want to collaborate, feel free to reach out. I'm excited to connect and share my passion for web development and technology!</p>
+      <div class="links">
+        <h3><a href="http://www.webdev.cs.uregina.ca/~cmo153/Library%20Management%20Project/">Projects</a></h3>
+        <h3><a href="Marcel Co-op RESUME.2024.2.pdf">View Resume</a></h3>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:marcelokafor44@gmail.com">marcelokafor44@gmail.com</a></p>
-    <p>LinkedIn: <a href="http://www.linkedin.com/in/marcel-okafor">www.linkedin.com/in/marcel-okafor</a></p>
-    <p>GitHub: <a href="http://github.com/Marceljnr">github.com/Marceljnr</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:marcelokafor44@gmail.com">marcelokafor44@gmail.com</a></p>
+      <p>LinkedIn: <a href="http://www.linkedin.com/in/marcel-okafor">www.linkedin.com/in/marcel-okafor</a></p>
+      <p>GitHub: <a href="http://github.com/Marceljnr">github.com/Marceljnr</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Marcel Okafor. All Rights Reserved.</p>
+  </footer>
+
+ 
 
  
 
@@ -67,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
 
   </script>
 </body>
